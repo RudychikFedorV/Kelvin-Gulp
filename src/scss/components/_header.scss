@@ -1,0 +1,107 @@
+.header {
+  @include flex-spaceBetween-end;
+  padding: 46px 76px;
+
+  &__logo {
+    font: var(--txt-700-32-ff);
+    color: var(--c-color-black);
+    position: relative;
+    &::before {
+      @include pseudo-element;
+      background: var(--c-color-before);
+      width: 8px;
+      height: 8px;
+      bottom: -4px;
+      right: -10px;
+    }
+  }
+  .active {
+    color: var(--c-color-active);
+  }
+  &__backdrop {
+    background: var(--c-background-backdrop);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    transform: translateX(120%);
+    display: none;
+    transition: var(--transition);
+    opacity: 0;
+
+    @include tablet {
+      display: block;
+    }
+
+    &._active {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  &__ul {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    z-index: 9;
+
+    @include tablet {
+      z-index: 9;
+      position: fixed;
+      width: 70%;
+      height: 100%;
+      flex-direction: column;
+      left: 0;
+      top: 0;
+      background: var(--c-color-white);
+      align-items: center;
+      justify-content: center;
+      transform: translateX(-120%);
+      transition: var(--transition);
+    }
+
+    &._active {
+      transform: translateX(0);
+    }
+
+    .icon-close {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      color: var(--c-color-close);
+    }
+  }
+
+  &__a {
+    font: var(--txt-500-14-ff);
+    color: var(--c-color-black);
+    transition: var(--transition);
+    &:hover {
+      color: var(--c-color-active);
+    }
+    @include tablet {
+      color: var(--c-color-active);
+      font: var(--txt-600-34-ff);
+      &:hover {
+        padding-left: 20px;
+      }
+    }
+  }
+  @include tablet {
+    .header__a.active {
+      color: var(--c-color-black);
+    }
+  }
+}
+
+.icon-menu,
+.icon-close {
+  cursor: pointer;
+  display: none;
+
+  @include tablet {
+    display: inline-block;
+  }
+}

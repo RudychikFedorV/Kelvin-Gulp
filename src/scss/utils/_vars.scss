@@ -1,0 +1,18 @@
+:root {
+  --ff: "Poppins", sans-serif;
+  --transition: 0.2s all ease-in-out;
+
+  --txt-700-32-ff: normal 700 32px / 100% var(--ff);
+
+  --txt-600-34-ff: normal 600 34px / 100% var(--ff);
+
+  --txt-500-14-ff: normal 500 14px / 100% var(--ff);
+
+  --c-color-white: #fff;
+  --c-color-black: #000;
+  --c-color-active: #606060;
+  --c-color-close: #828282;
+
+  --c-color-before: #fda300;
+  --c-background-backdrop: rgba(0, 0, 0, 0.6);
+}
