@@ -7,10 +7,10 @@ body {
   font-family: var(--ff);
   scroll-behavior: smooth;
 }
-
 .wrapper {
   max-width: 1600px;
   margin-inline: 0 auto;
+  background: var(--c-background-wrapper);
 }
 .container {
   max-width: 1230px;
