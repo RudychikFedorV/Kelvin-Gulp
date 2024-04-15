@@ -1,3 +1,24 @@
 .welcome {
-    
+  @include flex-spaceBetween-center;
+  gap: 20px;
+  @include tablet-small {
+    flex-direction: column;
+  }
+  &__info {
+    max-width: 500px;
+    &-title {
+      font: var(--txt-600-44-ff);
+      color: var(--c-color-black);
+      @include mobile {
+        font: var(--txt-600-34-ff);
+      }
+      @include mobile-small {
+        font: var(--txt-600-28-ff);
+      }
+    }
+    &-desc {
+      font: var(--txt-400-14-ff);
+      color: var(--c-color-black);
+    }
+  }
 }

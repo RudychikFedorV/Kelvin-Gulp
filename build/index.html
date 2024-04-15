@@ -11,6 +11,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="./css/main.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+		integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -33,13 +36,30 @@
 		<span class="material-icons icon-menu" onclick="navToggle()">menu</span>
 	</div>
 </header>
-			
+			<section class="welcome">
+	<div class="welcome__info" data-aos="fade-up">
+		<h1 class="welcome__info-title">Kelvin Kramer <br> Designer & Developer</h1>
+		<p class="welcome__info-desc">I’m a portrait, fashion and lifestyle photographer living In New York
+			City. During my thirteen year tenure here.
+		</p>
+	</div>
+	<div class="welcome__img" data-aos="fade-left">
+
+		<picture>
+			<source media="(max-width: 480px)" srcset="./img/hero-mobile.png">
+			<img src="./img/hero.png" alt="">
+		</picture>
+	</div>
+
+</section>
 			
 		</div>
 	</div>
 
 
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+		integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="./js/index.bundle.js"></script>
 	<script>
 		function navToggle() {
