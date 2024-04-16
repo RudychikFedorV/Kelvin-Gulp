@@ -1,6 +1,9 @@
 .portfolio {
   padding: 90px 0;
   background: var(--c-background-wrapper);
+  @include mobile {
+    padding: 60px 0;
+  }
   .container {
     text-align: center;
   }
@@ -26,5 +29,8 @@
   }
   .portfolio-block + .portfolio-block {
     margin-top: 90px;
+    @include mobile {
+      margin-top: 50px;
+    }
   }
 }
