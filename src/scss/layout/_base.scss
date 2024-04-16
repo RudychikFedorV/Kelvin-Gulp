@@ -9,13 +9,13 @@ body {
 }
 .wrapper {
   max-width: 1600px;
-  margin-inline: 0 auto;
-  background: var(--c-background-wrapper);
+  margin-inline: auto;
 }
 .container {
   max-width: 1230px;
   padding: 0 30px;
-  margin: 0 auto;
+  margin-inline: auto;
+  
   @include mobile {
     padding: 0 10px;
   }
