@@ -1,0 +1,30 @@
+.portfolio {
+  padding: 90px 0;
+  background: var(--c-background-wrapper);
+  .container {
+    text-align: center;
+  }
+  &-title {
+    font: var(--txt-600-34-ff);
+    text-align: center;
+    color: var(--c-color-black-portfolio);
+    margin-bottom: 70px;
+  }
+  &-block {
+    display: flex;
+    flex-direction: column;
+    &__img {
+      margin-bottom: 40px;
+    }
+    &__desc {
+      font: var(--txt-400-18-ff);
+      text-decoration: underline;
+      text-decoration-skip-ink: none;
+      text-align: center;
+      color: var(--c-color-black-portfolio);
+    }
+  }
+  .portfolio-block + .portfolio-block {
+    margin-top: 90px;
+  }
+}
